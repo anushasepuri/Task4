@@ -1,0 +1,62 @@
+body{
+	background-image: url('black3.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.a{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.b{
+	background-color: white;
+	width: 40%;
+	border: 2px solid black;
+	padding: 1%;
+}
+.c{
+	background-color: white;
+	width: 40%;
+	border: 2px solid black;
+	padding: 1%;
+}
+button{
+	box-shadow: 0px 5px 5px 0px #64d10a;
+	cursor: pointer;
+	border-radius: 25px;
+	padding: 1%;
+	border:none;
+}
+button:hover{
+	background-color: green;
+	box-shadow: 2px 2px 2px 2px #64d10a;
+	color: white;
+}
+#bu{
+	box-shadow: none;
+	background-color: #13c2f2;
+	border:1px solid black;
+	color: black;
+}
+@media only screen and (min-width:320px) and (max-width: 767px){
+	.a{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.b,.c{
+		width: 90%;
+		margin: 4%;
+	}
+}
+@media only screen and (min-width:768px) and (max-width: 1023px){
+	.a{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.b,.c{
+		width: 90%;
+		margin: 4%;
+	}
+}

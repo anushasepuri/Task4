@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TASK</title>
+	<link rel="stylesheet" type="text/css" href="js task10.css">
+	<meta name="Viewport" content="width=device-width,initial scale=1.0">
+</head>
+<body style="font-size: 20px;">
+	<p style="color: white;font-size: 25px;text-align: center;">S.Anusha_18691A0506_MITS1920WC10_25/09/2020</p>
+	<div class="a">
+		<div class="b">
+			<i><p style="text-align: center;font-size: 22px;"><b>ARRAY METHODS</b></p></i>
+			<p><u><b>SORT ELEMENTS</b></u></p>
+			<a href="sort.html"><button>SORT</button></a>
+			<p style="text-align: right;"><u><b>REVERSE ELEMENTS</b></u></p>
+			<p style="text-align: right;"><a href="reverse.html"><button>REVERSE</button></a></p>
+			<p><u><b>ASCENDING ORDER</b></u></p>
+			<a href="ascending.html"><button>ASCENDING</button></a>
+			<p style="text-align: right;"><u><b>DESCENDING ORDER</b></u></p>
+			<p style="text-align: right;"><a href="descending.html"><button>DESCENDING</button></a></p>
+			<p><u><b>SMALLEST NUMBER</b></u></p>
+			<a href="ascending.html"><button>SMALLEST</button></a>
+			<p style="text-align: right;"><u><b>LARGEST NUMBER</b></u></p>
+			<p style="text-align: right;"><a href="descending.html"><button>LARGEST</button></a></p>
+		</div>
+		<div class="c">
+			<i><p style="text-align: center;font-size: 22px;"><b>RANDOM SORT</b></p></i>
+			<p><b><u>Description:</u></b></p>
+			<p>This will sort the array in random order.Here we use the function random1(a,b) which return 0.5-Math.random().</p>
+			<p><b><u>Why 0.5?</u></b></p>
+			<p>The function random1(a,b) will return value in range of [-0.5,0.5].Because this function return 0.5 - Math.random() and Math.random() will return the float value which is in range of [0,1].So that your function will return value in range of [-0.5,0.5].And this mean that sort order will be set increase or decrease. So your result will be random.</p>
+			<p><b>Example:</b></p>
+			<p>My array is:</p>
+			<p id=id1></p>
+			<button onclick="random1()">Click here to sort elements</button>
+			<p id="id2"></p>
+			<script type="text/javascript">
+				var ar1 = [2,4,3,5,1];
+				document.getElementById("id1").innerHTML = ar1;  
+				function random1() {
+  					ar1.sort(function(a, b){
+  						return 0.5 - Math.random();
+  					});
+ 					document.getElementById("id2").innerHTML = ar1;
+}
+			</script>
+		</div>
+	</div>
+</body>
+</html>

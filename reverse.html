@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REVERSE</title>
+	<link rel="stylesheet" type="text/css" href="js task10.css">
+</head>
+<body style="font-size: 20px;">
+	<div class="a">
+		<div class="b">
+			<p><u><b>REVERSE ELEMENTS</b></u></p>
+			<p><i><u>Description:</u></i></p>
+			<p>The reverse() method reverses an array.This will return elements in reverse order.</p>
+			<p>My array is:</p>
+			<p id=id1></p>
+			<button onclick="rev()">Click here to reverse elements</button>
+			<p id="id2"></p>
+			<p id="id3"></p>
+			<script type="text/javascript">
+				var ar1=["anusha","Aparna","supriya","Vyshu"];
+				document.getElementById('id1').innerHTML=ar1;
+				function alert1(){
+					alert("Elements are reversed.");
+					return "<p><u>Explanation:</u></p><p>At first,the elements are 'anusha','Aparna','supriya','Vyshu'.Now the elements are 'Vyshu','supriya','Aparna','anusha'</p>";
+				}
+				function rev(){
+					
+					document.getElementById('id2').innerHTML=ar1.reverse();
+					document.getElementById('id3').innerHTML=alert1();
+				}
+			</script>
+		</div>
+	</div>
+	<a href="js task10.html"><button id="bu">Home</button></a>
+</body>
+</html>
